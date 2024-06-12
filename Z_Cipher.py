@@ -7,6 +7,8 @@ try:
 except:
     os.system("pip3 install termcolor")
     os.system("pip3 install pyfiglet")
+    import termcolor
+    import pyfiglet
 
 BANNER = pyfiglet.figlet_format("Z_Cipher",font="slant")
 COLOR = termcolor.colored(BANNER, "blue")
